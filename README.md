@@ -18,7 +18,7 @@ Open in a web browser.
 
 ### Reflections and Comments
 
-#### Lab: 02
+#### Lab: 06
 
 - I had difficulty setting up the object literals, most specifically when it came to methods. I came up with a solution in the end, but as I look at it, I think there is likely a much better way to do this.
 - Writing the list items into the sales page was relatively easy for me. So I am simultaneously pleased and concerned....
