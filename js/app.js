@@ -1,26 +1,26 @@
 'use strict'
 
 // var locations = ['seattle','tokyo','dubai','paris','lima'];
-var times = ['6am:','7am:','8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:','6pm:','7pm:'];
 
 function populate(location) {
   for( var i = 0 ; i < 14 ; i++ ) {
     var min = Math.ceil(location.minCustomers);
     var max = Math.floor(location.maxCustomers);
-   location.customersPerHour.push(Math.floor(Math.random() * (max - min + 1) + min));
+    location.customersPerHour.push(Math.floor(Math.random() * (max - min + 1) + min));
   }
   for( var j = 0 ; j < 14 ; j++ ) {
-  var cookieTotal = Math.ceil(location.customersPerHour[j] * location.cookiesPerCustomer);
-  location.cookiesSoldPerHour.push(cookieTotal);
+    var cookieTotal = Math.ceil(location.customersPerHour[j] * location.cookiesPerCustomer);
+    location.cookiesSoldPerHour.push(cookieTotal);
   }
   var totalSales = location.cookiesSoldPerHour[0];
   for( var k = 1 ; k < 14 ; k++ ) {
-  totalSales += location.cookiesSoldPerHour[k];
+    totalSales += location.cookiesSoldPerHour[k];
   }
   location.totalCookiesDaily = totalSales;
 }
 
 function hourlySales(location) {
+  var times = ['6am:','7am:','8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:','6pm:','7pm:'];
   for( var i = 0 ; i < location.cookiesSoldPerHour.length ; i++ ) {
   var liElement = document.createElement('li');
   liElement.textContent = times[i] + ' ' + location.cookiesSoldPerHour[i] + ' cookies';
@@ -81,11 +81,15 @@ var lima = {
   totalCookiesDaily: 0
 }
 
+/* populate the object arrays */
+
 populate(seattle);
 populate(tokyo);
 populate(dubai);
 populate(paris);
 populate(lima);
+
+/* write lists to sales sheet */
 
 hourlySales(seattle);
 hourlySales(tokyo);
