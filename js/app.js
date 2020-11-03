@@ -1,32 +1,62 @@
 'use strict'
 
-var seattleShop = {
-  minCustomersHour: 23,
-  maxCustomersHour: 65,
-  customerCookieAverage: 6.3,
-  randomCustomersHourly: function(){
-   var randomCustomerArray = [];
-   
-   for( var i = 0 ; i < 14 ; i++) {
-    var min = Math.ceil(this.minCustomersHour);
-    var max = Math.floor(this.maxCustomersHour);
-    randomCustomerArray.push(Math.floor(Math.random() * (max - min + 1) + min));
-   }
-   return randomCustomerArray;
-  },
-  cookieSalesHourly: function(){
-   
-  }
+var locations = ['seattle','tokyo','dubai','paris','lima'];
+
+function populate(location) {
+ for( var i = 0 ; i < 14 ; i++ ) {
+   var min = Math.ceil(location.minCustomers);
+   var max = Math.floor(location.maxCustomers);
+   location.customersPerHour.push(Math.floor(Math.random() * (max - min + 1) + min));
+ }
+ for( var j = 0 ; j < 14 ; j++ ) {
+  var cookieTotal = Math.ceil(location.customersPerHour[j] * location.cookiesPerCustomer);
+  location.cookiesSoldPerHour.push(cookieTotal);
+ }
 }
 
- console.log(seattleShop);
- console.log(seattleShop.randomCustomersHourly());
+var seattle = {
+ minCustomers: 23,
+ maxCustomers: 65,
+ cookiesPerCustomer: 6.3,
+ customersPerHour: [],
+ cookiesSoldPerHour: []
+}
 
- // function generateRandomCustomersArray(min, max){
- //   randomCustomerArray.push(seattleShop.randomCustomersHourly());
- //  }
- //  return randomCustomerArray;
- // }
+var tokyo = {
+ minCustomers: 3,
+ maxCustomers: 24,
+ cookiesPerCustomer: 1.2,
+ customersPerHour: [],
+ cookiesSoldPerHour: []
+}
 
- // var answer = generateRandomCustomersArray(seattleShop.minCustomersHour,seattleShop.maxCustomersHour);
- // console.log(answer);
+var dubai = {
+ minCustomers: 11,
+ maxCustomers: 38,
+ cookiesPerCustomer: 3.7,
+ customersPerHour: [],
+ cookiesSoldPerHour: []
+}
+
+var paris = {
+ minCustomers: 20,
+ maxCustomers: 38,
+ cookiesPerCustomer: 2.3,
+ customersPerHour: [],
+ cookiesSoldPerHour: []
+}
+
+var lima = {
+ minCustomers: 2,
+ maxCustomers: 16,
+ cookiesPerCustomer: 4.6,
+ customersPerHour: [],
+ cookiesSoldPerHour: []
+}
+
+populate(seattle);
+populate(tokyo);
+populate(dubai);
+populate(paris);
+populate(lima);
+
