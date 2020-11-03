@@ -46,21 +46,6 @@ paris.hourlyCookieSales();
 lima.randomCustomers();
 lima.hourlyCookieSales();
 
-
-// function dailySales(location) {
-//   var times = ['6am:','7am:','8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:','6pm:','7pm:'];
-//   for( var i = 0 ; i < location.cookiesSoldPerHour.length ; i++ ) {
-//     var liElement = document.createElement('li');
-//     liElement.textContent = `${times[i]} ${location.cookiesSoldPerHour[i]} cookies`;
-//     location.list.appendChild(liElement);
-//   }
-//   var liElement = document.createElement('li');
-//   liElement.textContent = `Total: ${location.totalCookiesDaily} cookies`;
-//   location.list.appendChild(liElement);
-// }
-
-
-
 // render: function() {
 //   for( var i = 0 ; i < this.cookiesSoldPerHour.length ; i++ ) {
 //     var liElement = document.createElement('li');
@@ -71,4 +56,3 @@ lima.hourlyCookieSales();
 //   liElement.textContent = `Total: ${this.totalCookiesDaily} cookies`;
 //   this.list.appendChild(liElement);
 // }
-
