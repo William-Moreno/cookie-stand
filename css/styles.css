@@ -80,7 +80,7 @@ section li {
   );
   background-repeat: no-repeat;
   background-size: cover;
-  transform: translateX(14px);
+  transform: translateX(5%);
   margin: 10px auto;
   display: inline-block;
   border: 2px solid rgb(52, 51, 38);
