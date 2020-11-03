@@ -43,15 +43,16 @@ h2 {
 
 nav {
   width: 100vw;
-  height: 60px;
+  height: 48px;
   background-color: rgb(36, 35, 26);
+  margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
 }
 
 nav a {
   font-size: 28px;
-  line-height: 60px;
+  line-height: 48px;
   text-decoration: none;
   color: salmon;
 }
@@ -90,6 +91,13 @@ section tr {
   text-align: center;
 }
 
+.salmon-logo {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(-20px, 240px);
+}
+
 table {
   text-align: center;
 }
@@ -107,4 +115,60 @@ th {
 td:first-child,
 td:last-child {
   font-size: 18px;
+}
+
+.wiggle {
+  object-fit: cover;
+  animation: squirm 2s infinite;
+}
+
+@keyframes squirm {
+  6.25% {
+    transform: rotateY(10deg);
+  }
+  12.5% {
+    transform: rotateZ(5deg);
+  }
+  18.75% {
+    transform: rotateY(20deg);
+  }
+  25% {
+    transform: rotateZ(10deg);
+  }
+  31.25% {
+    transform: rotateY(10deg);
+  }
+  37.5% {
+    transform: rotateZ(5deg);
+  }
+  43.75% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  56.25% {
+    transform: rotateY(-10deg);
+  }
+  62.5% {
+    transform: rotateZ(-5deg);
+  }
+  68.75% {
+    transform: rotateY(-20deg);
+  }
+  75% {
+    transform: rotateZ(-10deg);
+  }
+  81.25% {
+    transform: rotateY(-10deg);
+  }
+  87.5% {
+    transform: rotateZ(-5deg);
+  }
+  93.75% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
 }
