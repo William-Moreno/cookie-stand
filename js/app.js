@@ -1,6 +1,7 @@
 'use strict'
 
 var locations = ['seattle','tokyo','dubai','paris','lima'];
+var times = ['6am:','7am:','8am:','9am:','10am:','11am:','12pm:','1pm:','2pm:','3pm:','4pm:','5pm:','6pm:','7pm:'];
 
 function populate(location) {
  for( var i = 0 ; i < 14 ; i++ ) {
@@ -20,6 +21,7 @@ function populate(location) {
 }
 
 var seattle = {
+ list: document.getElementById('seattle-list'),
  minCustomers: 23,
  maxCustomers: 65,
  cookiesPerCustomer: 6.3,
@@ -71,5 +73,17 @@ populate(paris);
 populate(lima);
 
 var seattleList = document.getElementById('seattle-list');
-var liElement = document.createElement('li');
 
+
+function hourlySales(location) {
+ for( var i = 0 ; i < location.cookiesSoldPerHour.length ; i++ ) {
+  var liElement = document.createElement('li');
+  liElement.textContent = times[i] + ' ' + location.cookiesSoldPerHour[i] + ' cookies';
+  location.list.appendChild(liElement);
+ }
+ var liElement = document.createElement('li');
+ liElement.textContent = 'Total: ' + location.totalCookiesDaily + ' cookies';
+ location.list.appendChild(liElement);
+}
+
+hourlySales(seattle);
