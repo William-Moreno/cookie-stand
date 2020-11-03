@@ -1,5 +1,6 @@
 body {
   margin: 5px;
+  /* background-color: rgb(86, 69, 38); */
 }
 
 header {
@@ -8,23 +9,40 @@ header {
 
 h1 {
   width: 75vw;
-  height: 72px;
+  height: 144px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 72px;
+  line-height: 144px;
   text-align: center;
   background-color: salmon;
 }
 
 h2 {
+  background-color: rgb(223, 194, 145);
+  color: rgb(38, 39, 50);
   padding: 6px;
   margin-bottom: 10px;
   font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
 }
 
-main {
+nav {
+  width: 60vw;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a {
+  font-size: 20px;
+  color: rgb(223, 194, 145);
+}
+
+nav a:visited {
+  color: salmon;
 }
 
 section ul {
@@ -34,6 +52,7 @@ section ul {
 
 section li {
   line-height: 22px;
+  font-size: 18px;
 }
 
 .sales-section {
