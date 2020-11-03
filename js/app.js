@@ -12,6 +12,11 @@ function populate(location) {
   var cookieTotal = Math.ceil(location.customersPerHour[j] * location.cookiesPerCustomer);
   location.cookiesSoldPerHour.push(cookieTotal);
  }
+ var totalSales = location.cookiesSoldPerHour[0];
+ for( var k = 1 ; k < 14 ; k++ ) {
+  totalSales += location.cookiesSoldPerHour[k];
+ }
+ location.totalCookiesDaily = totalSales;
 }
 
 var seattle = {
@@ -19,7 +24,8 @@ var seattle = {
  maxCustomers: 65,
  cookiesPerCustomer: 6.3,
  customersPerHour: [],
- cookiesSoldPerHour: []
+ cookiesSoldPerHour: [],
+ totalCookiesDaily: 0
 }
 
 var tokyo = {
@@ -27,7 +33,8 @@ var tokyo = {
  maxCustomers: 24,
  cookiesPerCustomer: 1.2,
  customersPerHour: [],
- cookiesSoldPerHour: []
+ cookiesSoldPerHour: [],
+ totalCookiesDaily: 0
 }
 
 var dubai = {
@@ -35,7 +42,8 @@ var dubai = {
  maxCustomers: 38,
  cookiesPerCustomer: 3.7,
  customersPerHour: [],
- cookiesSoldPerHour: []
+ cookiesSoldPerHour: [],
+ totalCookiesDaily: 0
 }
 
 var paris = {
@@ -43,7 +51,8 @@ var paris = {
  maxCustomers: 38,
  cookiesPerCustomer: 2.3,
  customersPerHour: [],
- cookiesSoldPerHour: []
+ cookiesSoldPerHour: [],
+ totalCookiesDaily: 0
 }
 
 var lima = {
@@ -51,7 +60,8 @@ var lima = {
  maxCustomers: 16,
  cookiesPerCustomer: 4.6,
  customersPerHour: [],
- cookiesSoldPerHour: []
+ cookiesSoldPerHour: [],
+ totalCookiesDaily: 0
 }
 
 populate(seattle);
@@ -59,4 +69,7 @@ populate(tokyo);
 populate(dubai);
 populate(paris);
 populate(lima);
+
+var seattleList = document.getElementById('seattle-list');
+var liElement = document.createElement('li');
 
