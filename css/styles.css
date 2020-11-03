@@ -15,6 +15,7 @@ header {
 }
 
 h1 {
+  font-family: "Dancing Script", cursive;
   width: 75vw;
   height: 144px;
   margin-left: auto;
@@ -22,7 +23,9 @@ h1 {
   font-size: 72px;
   line-height: 144px;
   text-align: center;
-  background-color: salmon;
+  background-color: rgb(204, 171, 115);
+  border: 4px solid rgb(52, 51, 38);
+  border-radius: 50%;
 }
 
 h2 {
@@ -30,6 +33,7 @@ h2 {
   color: rgb(223, 194, 145);
   padding: 6px;
   margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -38,14 +42,17 @@ h2 {
 }
 
 nav {
-  width: 60vw;
-  height: 24px;
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(36, 35, 26);
   margin-left: auto;
   margin-right: auto;
 }
 
 nav a {
-  font-size: 20px;
+  font-size: 28px;
+  line-height: 60px;
+  text-decoration: none;
   color: salmon;
 }
 
@@ -55,11 +62,12 @@ nav a:visited {
 
 section ul {
   list-style: disc;
-  transform: translateX(24px);
+  transform: translateX(20px);
 }
 
 section li {
   line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
