@@ -179,3 +179,17 @@ td:last-child {
     transform: rotateZ(0deg);
   }
 }
+
+.menu-section {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 30%;
+}
+
+.menu-item img {
+  width: 80%;
+  object-fit: cover;
+}
