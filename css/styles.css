@@ -49,12 +49,18 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
+nav .fas {
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 24px;
+  color: salmon;
+}
 
 nav a {
   font-size: 28px;
   line-height: 48px;
   text-decoration: none;
-  color: salmon;
+  color: rgb(223, 194, 145);
 }
 
 nav a:visited {
