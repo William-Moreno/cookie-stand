@@ -1,0 +1,15 @@
+body {
+  width: 960px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(52, 51, 38),
+    rgb(183, 88, 53),
+    rgb(204, 171, 115)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header img {
+  height: 50px;
+}
