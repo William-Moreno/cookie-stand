@@ -55,7 +55,6 @@ aside {
   float: left;
   padding-right: 16px;
   border: 2px solid black;
-  height: 80vh;
   width: 30vw;
   text-align: center;
 }
@@ -66,7 +65,22 @@ aside img {
 }
 
 aside nav {
+  background-color: rgba(36, 35, 26, 0.5);
   margin-bottom: 20px;
+}
+
+#hours-fish {
+  width: 75%;
+}
+
+#open-hours {
+  transform: translateY(-400%);
+  font-family: "Dancing Script", cursive;
+  color: rgb(230, 214, 188);
+  font-size: 32px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  text-shadow: 3px 3px black;
 }
 
 nav {
@@ -178,62 +192,6 @@ td:first-child,
 td:last-child {
   font-size: 18px;
 }
-
-/* .wiggle {
-  object-fit: cover;
-  animation: squirm 2s infinite;
-}
-
-@keyframes squirm {
-  6.25% {
-    transform: rotateY(10deg);
-  }
-  12.5% {
-    transform: rotateZ(5deg);
-  }
-  18.75% {
-    transform: rotateY(20deg);
-  }
-  25% {
-    transform: rotateZ(10deg);
-  }
-  31.25% {
-    transform: rotateY(10deg);
-  }
-  37.5% {
-    transform: rotateZ(5deg);
-  }
-  43.75% {
-    transform: rotateY(0deg);
-  }
-  50% {
-    transform: rotateZ(0deg);
-  }
-  56.25% {
-    transform: rotateY(-10deg);
-  }
-  62.5% {
-    transform: rotateZ(-5deg);
-  }
-  68.75% {
-    transform: rotateY(-20deg);
-  }
-  75% {
-    transform: rotateZ(-10deg);
-  }
-  81.25% {
-    transform: rotateY(-10deg);
-  }
-  87.5% {
-    transform: rotateZ(-5deg);
-  }
-  93.75% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-} */
 
 .menu-section {
   text-align: center;
