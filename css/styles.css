@@ -41,14 +41,25 @@ h2 {
   border-radius: 6px;
 }
 
-nav {
-  width: 100vw;
-  height: 48px;
-  background-color: rgb(36, 35, 26);
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
+aside {
+  border: 2px solid black;
+  width: 30vw;
+  text-align: center;
 }
+
+aside img {
+  width: 90%;
+  object-fit: cover;
+}
+
+nav {
+  background-color: rgb(36, 35, 26);
+}
+
+#nav-bar li {
+  text-align: left;
+}
+
 nav .fas {
   margin-left: 4px;
   margin-right: 4px;
@@ -57,7 +68,7 @@ nav .fas {
 }
 
 nav a {
-  font-size: 28px;
+  font-size: 20px;
   line-height: 48px;
   text-decoration: none;
   color: rgb(223, 194, 145);
@@ -99,10 +110,8 @@ section tr {
 }
 
 .salmon-logo {
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translate(-20px, 240px);
+  float: left;
+  width: 60px;
 }
 
 table {
@@ -124,7 +133,7 @@ td:last-child {
   font-size: 18px;
 }
 
-.wiggle {
+/* .wiggle {
   object-fit: cover;
   animation: squirm 2s infinite;
 }
@@ -178,7 +187,7 @@ td:last-child {
   100% {
     transform: rotateZ(0deg);
   }
-}
+} */
 
 .menu-section {
   text-align: center;
