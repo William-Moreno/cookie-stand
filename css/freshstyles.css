@@ -11,8 +11,178 @@ body {
 }
 
 header {
+  height: 60px;
+  width: 960px;
+  text-align: center;
+}
+
+header div {
+  display: inline-block;
 }
 
 header img {
   height: 50px;
+}
+
+#title {
+  height: 60px;
+  margin: 0 100px;
+  line-height: 60px;
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 0 6px salmon;
+  transform: translateY(-6px);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.33);
+  text-align: center;
+  height: 30px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: rgb(223, 194, 145);
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: salmon;
+  text-decoration: none;
+}
+
+.main-section {
+  border: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+#main-center {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 412px;
+  text-align: center;
+}
+
+#hero img {
+  width: 412px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+#cookie-border {
+  color: salmon;
+  font-size: 32px;
+  letter-spacing: 12px;
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 24px;
+}
+
+#main-left,
+#main-right {
+  box-sizing: border-box;
+  width: 240px;
+  text-align: center;
+}
+
+.side-img {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.small-img {
+  width: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#business-hours h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  font-weight: bold;
+  transform: translateY(40px);
+  text-shadow: 0 0 8px white;
+}
+
+#business-hours p {
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  font-weight: bold;
+  transform: translateY(-72px);
+  color: rgb(230, 214, 188);
+  text-shadow: 0 0 8px rgb(38, 39, 50);
+}
+
+#locations {
+  text-align: center;
+}
+
+#locations h2 {
+  height: 28px;
+  width: 200px;
+  background-color: rgb(38, 39, 50);
+  border-radius: 50%;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translate(20px, 14px);
+  color: rgb(230, 214, 188);
+}
+
+.location-card h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.location-card {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  margin: 6px auto;
+  padding: 3px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 171, 115),
+    rgb(230, 214, 188)
+  );
+  border-radius: 6px;
+}
+#shop {
+  margin-bottom: 12px;
+}
+#shop img {
+  border-radius: 50%;
+}
+
+#cutter {
+  transform: translateX(-40px);
+}
+
+#shirt {
+  transform: translateX(40px);
+}
+
+#shop-link {
+  font-size: 28px;
+  transform: translateY(-150px);
+  z-index: 5;
+}
+
+#shop-link a {
+  background-color: rgb(38, 39, 50);
+  border-radius: 12px;
+  color: rgb(230, 214, 188);
+
+  text-decoration: none;
 }
