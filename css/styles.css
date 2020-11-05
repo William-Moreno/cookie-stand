@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
   background-image: linear-gradient(
     to bottom right,
     rgb(52, 51, 38),
@@ -11,11 +10,14 @@ body {
 }
 
 #home {
+  display: flex;
+
   padding: 6px;
 }
 
 header {
   text-align: center;
+  margin-bottom: 12px;
 }
 
 h1 {
@@ -54,7 +56,6 @@ h3 {
 aside {
   float: left;
   padding-right: 16px;
-  border: 2px solid black;
   width: 30vw;
   text-align: center;
 }
@@ -70,7 +71,8 @@ aside nav {
 }
 
 #hours-fish {
-  width: 75%;
+  width: 80%;
+  border-radius: 8px;
 }
 
 #open-hours {
@@ -88,7 +90,7 @@ nav {
 }
 
 #nav-bar li {
-  text-align: left;
+  text-align: center;
 }
 
 nav .fas {
@@ -134,13 +136,41 @@ section tr {
   font-weight: bold;
 }
 
+#hero {
+  text-align: center;
+}
+
+#hero img {
+  /* transform: translateX(60px); */
+}
+
+#hero p {
+  padding: 30px 60px 20px 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
 #lower {
   display: flex;
 }
 
 #lower article {
+  display: inline-block;
+  /* width: 30%;
+  margin-left: 6px;
+  margin-right: 6px; */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 171, 115),
+    rgb(230, 214, 188)
+  );
+  border: 2px solid rgb(52, 51, 38);
+  border-radius: 18px;
+  padding: 8px;
+  box-shadow: 3px 3px 5px rgb(52, 51, 38);
   width: 300px;
-  margin: 8px;
+  margin: 30px 8px;
   text-align: center;
   border: 2px solid black;
 }
@@ -148,6 +178,9 @@ section tr {
 #lower article img {
   width: 85%;
   object-fit: cover;
+  border-radius: 18px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .sales-section,
