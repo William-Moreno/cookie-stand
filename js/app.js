@@ -96,7 +96,15 @@ function createLocation(event) {
   newestStore.hourlyCookieSales();
   newestStore.renderSales();
   newestStore.renderStaff();
-  
+  totalHourlyCookies = [];
+  totalHourlyStaff = [];
+  cookieGrandTotal = 0;
+  renderSalesTableFooter();
+  var tfootParent = document.getElementById('table-foot');
+  tfootParent.removeChild(tfootParent.firstElementChild);
+  renderStaffTableFooter();
+  var staffFootParent = document.getElementById('staff-foot');
+  staffFootParent.removeChild(staffFootParent.firstElementChild);
 }
 
 function renderSalesTableHeader(){
