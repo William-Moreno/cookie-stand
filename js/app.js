@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var hours = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 var controlCurve = [0.5, 0.75, 1.0, 0.6, 0.8, 1.0, 0.7, 0.4, 0.6, 0.9, 0.7, 0.5, 0.3, 0.4];
@@ -75,6 +75,11 @@ Store.prototype.renderStaff = function(){
   }
 }
 
+new Store('Seattle', 23, 65, 6.3);
+new Store('Tokyo', 3, 24, 1.2);
+new Store('Dubai', 11, 38, 3.7);
+new Store('Paris', 20, 38, 2.3);
+new Store('Lima', 2, 16, 4.6);
 
 function renderSalesTableHeader(){
   var theadParent = document.getElementById('table-head');
@@ -122,22 +127,16 @@ function renderSalesTableFooter(){
   trElement.appendChild(thElement);
 }
 
-new Store('Seattle', 23, 65, 6.3);
-new Store('Tokyo', 3, 24, 1.2);
-new Store('Dubai', 11, 38, 3.7);
-new Store('Paris', 20, 38, 2.3);
-new Store('Lima', 2, 16, 4.6);
-
-
 renderSalesTableHeader();
+
 for(var i = 0; i < allLocations.length; i++){
   allLocations[i].randomCustomers();
   allLocations[i].tossersEachHour();
   allLocations[i].hourlyCookieSales();
   allLocations[i].renderSales();
 }
-renderSalesTableFooter();
 
+renderSalesTableFooter();
 
 function renderStaffTableHeader(){
   var staffHeadParent = document.getElementById('staff-head');
@@ -179,8 +178,10 @@ function renderStaffTableFooter(){
 }
 
 renderStaffTableHeader();
+
 for(var i = 0; i < allLocations.length; i++){
   var staffBodyParent = document.getElementById('staff-body');
   allLocations[i].renderStaff();
 }
+
 renderStaffTableFooter();
