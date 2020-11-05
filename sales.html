@@ -19,6 +19,36 @@
       </nav>
     </header>
     <main>
+      <section id="new-location-entry">
+        <form id="new-location-form" action="">
+          <fieldset id="form-field">
+            <legend>
+              Enter Data for a New Location
+            </legend>
+            <label for="">
+              Location:
+              <input type="text" name="newcity">
+            </label>
+            <br />
+            <label for="">
+              Minimum Customers:
+              <input type="text" name="minimumpop">
+            </label>
+            <br />
+            <label for="">
+              Maximum Customers:
+              <input type="text" name="maximumpop">
+            </label>
+            <br />
+            <label for="">
+              Average Number of Cookies Sold Per Customer:
+              <input type="text" name="averagesale">
+            </label>
+            <br />
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+      </section>
       <section id="table" class="sales-section">
         <h2>Average Hourly Cookie Sales by Location</h2>
         <table id="sales-table">
