@@ -131,7 +131,7 @@ nav ul li a:visited {
   height: 28px;
   width: 200px;
   background-color: rgb(38, 39, 50);
-  border-radius: 50%;
+  border-radius: 8px;
   font-family: "Dancing Script", cursive;
   font-size: 20px;
   font-weight: bold;
@@ -185,4 +185,13 @@ nav ul li a:visited {
   color: rgb(230, 214, 188);
 
   text-decoration: none;
+}
+
+#page-footer {
+  background-color: rgb(38, 39, 50);
+  color: white;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
 }
