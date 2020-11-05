@@ -11,14 +11,12 @@ body {
 }
 
 header {
-  border: 2px dashed lime;
   height: 60px;
   width: 960px;
   text-align: center;
 }
 
 header div {
-  border: 2px dashed lime;
   display: inline-block;
 }
 
@@ -38,17 +36,27 @@ header img {
 }
 
 nav {
+  background-color: rgba(0, 0, 0, 0.33);
   text-align: center;
-  border: 2px dashed lime;
-  height: 40px;
+  height: 30px;
 }
 
 nav ul li {
   display: inline;
   padding-left: 60px;
   padding-right: 60px;
-  line-height: 40px;
+  line-height: 30px;
   font-size: 18px;
+}
+
+nav ul li a {
+  color: rgb(223, 194, 145);
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: salmon;
+  text-decoration: none;
 }
 
 .main-section {
@@ -58,6 +66,7 @@ nav ul li {
 }
 
 #main-center {
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   width: 412px;
   text-align: center;
@@ -131,12 +140,14 @@ nav ul li {
 }
 
 .location-card h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 4px;
 }
 
 .location-card {
+  font-family: Arial, Helvetica, sans-serif;
   width: 200px;
   margin: 6px auto;
   padding: 3px;
@@ -146,4 +157,32 @@ nav ul li {
     rgb(230, 214, 188)
   );
   border-radius: 6px;
+}
+#shop {
+  margin-bottom: 12px;
+}
+#shop img {
+  border-radius: 50%;
+}
+
+#cutter {
+  transform: translateX(-40px);
+}
+
+#shirt {
+  transform: translateX(40px);
+}
+
+#shop-link {
+  font-size: 28px;
+  transform: translateY(-150px);
+  z-index: 5;
+}
+
+#shop-link a {
+  background-color: rgb(38, 39, 50);
+  border-radius: 12px;
+  color: rgb(230, 214, 188);
+
+  text-decoration: none;
 }
