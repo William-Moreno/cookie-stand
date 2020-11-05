@@ -11,8 +11,76 @@ body {
 }
 
 header {
+  border: 2px dashed lime;
+  height: 60px;
+  width: 960px;
+  text-align: center;
+}
+
+header div {
+  border: 2px dashed lime;
+  display: inline-block;
 }
 
 header img {
   height: 50px;
+}
+
+#title {
+  height: 60px;
+  margin: 0 100px;
+  line-height: 60px;
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  font-weight: bold;
+  transform: translateY(-6px);
+}
+
+nav {
+  text-align: center;
+  border: 2px dashed lime;
+  height: 40px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.main-section {
+  border: 2px dashed lime;
+  display: inline-block;
+  margin: 10px;
+}
+
+#main-center {
+  box-sizing: border-box;
+  width: 400px;
+  text-align: center;
+}
+
+#hero img {
+  width: 380px;
+  object-fit: cover;
+  margin-bottom: 60px;
+}
+
+#main-left,
+#main-right {
+  box-sizing: border-box;
+  width: 240px;
+  text-align: center;
+}
+
+.side-img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.small-img {
+  width: 120px;
+  object-fit: cover;
 }
