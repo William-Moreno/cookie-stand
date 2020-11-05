@@ -52,21 +52,30 @@ nav ul li {
 }
 
 .main-section {
-  border: 2px dashed lime;
+  border: none;
   display: inline-block;
   margin: 10px;
 }
 
 #main-center {
   box-sizing: border-box;
-  width: 400px;
+  width: 412px;
   text-align: center;
 }
 
 #hero img {
-  width: 380px;
+  width: 412px;
   object-fit: cover;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+#cookie-border {
+  color: salmon;
+  font-size: 32px;
+  letter-spacing: 12px;
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 24px;
 }
 
 #main-left,
@@ -79,11 +88,13 @@ nav ul li {
 .side-img {
   width: 200px;
   object-fit: cover;
+  border-radius: 6px;
 }
 
 .small-img {
   width: 120px;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 #business-hours h2 {
@@ -101,4 +112,38 @@ nav ul li {
   transform: translateY(-72px);
   color: rgb(230, 214, 188);
   text-shadow: 0 0 8px rgb(38, 39, 50);
+}
+
+#locations {
+  text-align: center;
+}
+
+#locations h2 {
+  height: 28px;
+  width: 200px;
+  background-color: rgb(38, 39, 50);
+  border-radius: 50%;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translate(20px, 14px);
+  color: rgb(230, 214, 188);
+}
+
+.location-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.location-card {
+  width: 200px;
+  margin: 6px auto;
+  padding: 3px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 171, 115),
+    rgb(230, 214, 188)
+  );
+  border-radius: 6px;
 }
