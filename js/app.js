@@ -6,6 +6,7 @@ var allLocations = [];
 var totalHourlyCookies = [];
 var totalHourlyStaff = [];
 var cookieGrandTotal = 0;
+var newestStore;
 
 function Store(city,minCustomers,maxCustomers,averageCookies){
   this.city = city;
@@ -81,6 +82,31 @@ new Store('Dubai', 11, 38, 3.7);
 new Store('Paris', 20, 38, 2.3);
 new Store('Lima', 2, 16, 4.6);
 
+function createLocation(event) {
+  event.preventDefault();
+  var city = event.target.newcity.value;
+  var min = Number(event.target.minimumpop.value);
+  var max = Number(event.target.maximumpop.value);
+  var avg = Number(event.target.averagesale.value);
+
+  new Store(city, min, max, avg);
+  newestStore = allLocations[allLocations.length - 1];
+  newestStore.randomCustomers();
+  newestStore.tossersEachHour();
+  newestStore.hourlyCookieSales();
+  newestStore.renderSales();
+  newestStore.renderStaff();
+  totalHourlyCookies = [];
+  totalHourlyStaff = [];
+  cookieGrandTotal = 0;
+  renderSalesTableFooter();
+  var tfootParent = document.getElementById('table-foot');
+  tfootParent.removeChild(tfootParent.firstElementChild);
+  renderStaffTableFooter();
+  var staffFootParent = document.getElementById('staff-foot');
+  staffFootParent.removeChild(staffFootParent.firstElementChild);
+}
+
 function renderSalesTableHeader(){
   var theadParent = document.getElementById('table-head');
   var trElement = document.createElement('tr');
@@ -127,16 +153,6 @@ function renderSalesTableFooter(){
   trElement.appendChild(thElement);
 }
 
-renderSalesTableHeader();
-
-for(var i = 0; i < allLocations.length; i++){
-  allLocations[i].randomCustomers();
-  allLocations[i].tossersEachHour();
-  allLocations[i].hourlyCookieSales();
-  allLocations[i].renderSales();
-}
-
-renderSalesTableFooter();
 
 function renderStaffTableHeader(){
   var staffHeadParent = document.getElementById('staff-head');
@@ -177,6 +193,17 @@ function renderStaffTableFooter(){
   }
 }
 
+renderSalesTableHeader();
+
+for(var i = 0; i < allLocations.length; i++){
+  allLocations[i].randomCustomers();
+  allLocations[i].tossersEachHour();
+  allLocations[i].hourlyCookieSales();
+  allLocations[i].renderSales();
+}
+
+renderSalesTableFooter();
+
 renderStaffTableHeader();
 
 for(var i = 0; i < allLocations.length; i++){
@@ -185,3 +212,6 @@ for(var i = 0; i < allLocations.length; i++){
 }
 
 renderStaffTableFooter();
+
+var formElement = document.getElementById('new-location-form');
+formElement.addEventListener('submit', createLocation);
