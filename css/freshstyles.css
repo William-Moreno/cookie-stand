@@ -33,6 +33,7 @@ header img {
   font-family: "Dancing Script", cursive;
   font-size: 48px;
   font-weight: bold;
+  text-shadow: 0 0 6px salmon;
   transform: translateY(-6px);
 }
 
@@ -83,4 +84,21 @@ nav ul li {
 .small-img {
   width: 120px;
   object-fit: cover;
+}
+
+#business-hours h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  font-weight: bold;
+  transform: translateY(40px);
+  text-shadow: 0 0 8px white;
+}
+
+#business-hours p {
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  font-weight: bold;
+  transform: translateY(-72px);
+  color: rgb(230, 214, 188);
+  text-shadow: 0 0 8px rgb(38, 39, 50);
 }
