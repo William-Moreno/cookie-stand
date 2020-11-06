@@ -1,116 +1,3 @@
-body {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(52, 51, 38),
-    rgb(183, 88, 53),
-    rgb(204, 171, 115)
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#home {
-  display: flex;
-
-  padding: 6px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-h1 {
-  font-family: "Dancing Script", cursive;
-  width: 75vw;
-  height: 144px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 72px;
-  line-height: 144px;
-  text-align: center;
-  background-color: rgb(204, 171, 115);
-  border: 4px solid rgb(52, 51, 38);
-  border-radius: 50%;
-}
-
-h2 {
-  background-color: rgb(38, 39, 50);
-  color: rgb(223, 194, 145);
-  padding: 6px;
-  margin-bottom: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: capitalize;
-  text-align: center;
-  border-radius: 6px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-aside {
-  float: left;
-  padding-right: 16px;
-  width: 30vw;
-  text-align: center;
-}
-
-aside img {
-  width: 90%;
-  object-fit: cover;
-}
-
-aside nav {
-  background-color: rgba(36, 35, 26, 0.5);
-  margin-bottom: 20px;
-}
-
-#hours-fish {
-  width: 80%;
-  border-radius: 8px;
-}
-
-#open-hours {
-  transform: translateY(-400%);
-  font-family: "Dancing Script", cursive;
-  color: rgb(230, 214, 188);
-  font-size: 32px;
-  font-weight: bolder;
-  letter-spacing: 1.5px;
-  text-shadow: 3px 3px black;
-}
-
-nav {
-  background-color: rgb(36, 35, 26);
-}
-
-#nav-bar li {
-  text-align: center;
-}
-
-nav .fas {
-  margin-left: 4px;
-  margin-right: 4px;
-  font-size: 24px;
-  color: salmon;
-}
-
-nav a {
-  font-size: 20px;
-  line-height: 48px;
-  text-decoration: none;
-  color: rgb(223, 194, 145);
-}
-
-nav a:visited {
-  color: rgb(223, 194, 145);
-}
-
 .location-card {
   width: 80%;
   margin: 12px auto;
@@ -124,11 +11,6 @@ nav a:visited {
   line-height: 1.2em;
 }
 
-section ul {
-  list-style: disc;
-  transform: translateX(20px);
-}
-
 section tr {
   line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -136,30 +18,8 @@ section tr {
   font-weight: bold;
 }
 
-#hero {
-  text-align: center;
-}
-
-#hero img {
-  /* transform: translateX(60px); */
-}
-
-#hero p {
-  padding: 30px 60px 20px 500px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  text-align: left;
-}
-
-#lower {
-  display: flex;
-}
-
 #lower article {
   display: inline-block;
-  /* width: 30%;
-  margin-left: 6px;
-  margin-right: 6px; */
   background-image: linear-gradient(
     to bottom right,
     rgb(204, 171, 115),
@@ -173,14 +33,6 @@ section tr {
   margin: 30px 8px;
   text-align: center;
   border: 2px solid black;
-}
-
-#lower article img {
-  width: 85%;
-  object-fit: cover;
-  border-radius: 18px;
-  margin-top: 6px;
-  margin-bottom: 6px;
 }
 
 .sales-section,
@@ -224,6 +76,10 @@ th {
 td:first-child,
 td:last-child {
   font-size: 18px;
+}
+
+td:first-child {
+  text-transform: capitalize;
 }
 
 .menu-section {

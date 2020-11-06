@@ -10,6 +10,21 @@ body {
   background-size: cover;
 }
 
+h2 {
+  background-color: rgb(38, 39, 50);
+  color: rgb(223, 194, 145);
+  width: 700px;
+  padding: 4px 0;
+  margin-top: 16px;
+  margin-left: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 8px;
+}
+
 header {
   height: 60px;
   width: 960px;
@@ -59,11 +74,15 @@ nav ul li a:visited {
   text-decoration: none;
 }
 
-.main-section {
+.main-section,
+.sales-container {
   border: none;
   display: inline-block;
   margin: 10px;
 }
+
+/* 
+ */
 
 #main-center {
   font-family: Arial, Helvetica, sans-serif;
@@ -94,6 +113,28 @@ nav ul li a:visited {
   text-align: center;
 }
 
+#sales-form-section {
+  float: right;
+  width: 220px;
+  height: 500px;
+  text-align: center;
+  margin: 32px auto;
+  padding: 3px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 171, 115),
+    rgb(230, 214, 188)
+  );
+  border-radius: 12px;
+}
+
+#sales-table-section {
+  display: inline;
+  box-sizing: border-box;
+  width: 640px;
+  text-align: center;
+}
+
 .side-img {
   width: 200px;
   object-fit: cover;
@@ -106,12 +147,14 @@ nav ul li a:visited {
   border-radius: 4px;
 }
 
-#business-hours h2 {
+#business-hours h4 {
   font-family: "Dancing Script", cursive;
   font-size: 24px;
   font-weight: bold;
   transform: translateY(40px);
   text-shadow: 0 0 8px white;
+  color: black;
+  background-color: transparent;
 }
 
 #business-hours p {
@@ -127,7 +170,7 @@ nav ul li a:visited {
   text-align: center;
 }
 
-#locations h2 {
+#locations h4 {
   height: 28px;
   width: 200px;
   background-color: rgb(38, 39, 50);
@@ -194,4 +237,102 @@ nav ul li a:visited {
   text-align: center;
   font-size: 24px;
   line-height: 40px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 3px;
+  margin: 1px;
+}
+
+th {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+td {
+  font-size: 14px;
+}
+
+td:first-child,
+td:last-child {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+td:first-child {
+  text-transform: capitalize;
+}
+
+#sales-table th:last-child,
+#sales-table td:last-child {
+  max-width: 100px;
+}
+
+#staffing-table th {
+  font-size: 16px;
+}
+
+#staffing-table td:last-child {
+  font-weight: normal;
+}
+
+#sales-table,
+#staffing-table {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(183, 88, 53),
+    rgb(204, 171, 115)
+  );
+  margin-left: 10px;
+  width: 700px;
+  min-height: 260px;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 3px 3px 5px rgb(52, 51, 38);
+  text-align: center;
+}
+
+fieldset {
+  margin-top: 24px;
+  /* border: 2px dashed lime; */
+  width: 200px;
+  transform: translateX(20px);
+  text-align: left;
+}
+
+legend {
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: rgb(38, 39, 50);
+  border: 3px solid salmon;
+  margin-bottom: 48px;
+}
+
+input#submit {
+  background-color: salmon;
+  color: black;
+  text-transform: capitalize;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+input#submit:hover {
+  cursor: pointer;
+}
+
+input {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
 }
