@@ -89,6 +89,8 @@ function createLocation(event) {
   var max = Number(event.target.maximumpop.value);
   var avg = Number(event.target.averagesale.value);
   var newestStore = new Store(city, min, max, avg);
+
+  formElement.reset();
   
   for(var i = 0 ; i < allLocations.length -1 ; i++) {
     if (newestStore.city === allLocations[i].city) {
@@ -103,6 +105,9 @@ function createLocation(event) {
   totalHourlyStaff = [];
   cookieGrandTotal = 0;
   
+// document.getElementById('elementid').innerHTML = ''; "much easier way to remove"
+
+
   var tbodyParent = document.getElementById('table-body');
   while (tbodyParent.lastElementChild) {
     tbodyParent.removeChild(tbodyParent.lastElementChild);
