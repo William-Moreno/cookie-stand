@@ -343,3 +343,7 @@ label {
   font-weight: bold;
   font-size: 14px;
 }
+
+#chinook-img {
+  transform: translateY(-20px);
+}
