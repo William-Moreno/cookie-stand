@@ -1,118 +1,345 @@
+body {
+  width: 960px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(52, 51, 38),
+    rgb(183, 88, 53),
+    rgb(204, 171, 115)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  background-color: rgb(38, 39, 50);
+  color: rgb(223, 194, 145);
+  width: 700px;
+  padding: 4px 0;
+  margin-top: 16px;
+  margin-left: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header {
+  height: 60px;
+  width: 960px;
+  text-align: center;
+}
+
+header div {
+  display: inline-block;
+}
+
+header img {
+  height: 50px;
+}
+
+#title {
+  height: 60px;
+  margin: 0 100px;
+  line-height: 60px;
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 0 6px salmon;
+  transform: translateY(-6px);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.33);
+  text-align: center;
+  height: 30px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: rgb(223, 194, 145);
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: salmon;
+  text-decoration: none;
+}
+
+.main-section,
+.sales-container {
+  border: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* 
+ */
+
+#main-center {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  width: 412px;
+  text-align: center;
+}
+
+#hero img {
+  width: 412px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+#cookie-border {
+  color: salmon;
+  font-size: 32px;
+  letter-spacing: 12px;
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 24px;
+}
+
+#main-left,
+#main-right {
+  box-sizing: border-box;
+  width: 240px;
+  text-align: center;
+}
+
+#sales-form-section {
+  float: right;
+  width: 220px;
+  height: 500px;
+  text-align: center;
+  margin: 32px auto;
+  padding: 3px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 171, 115),
+    rgb(230, 214, 188)
+  );
+  border-radius: 12px;
+}
+
+#sales-table-section {
+  display: inline;
+  box-sizing: border-box;
+  width: 640px;
+  text-align: center;
+}
+
+.side-img {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.small-img {
+  width: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#business-hours h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  font-weight: bold;
+  transform: translateY(40px);
+  text-shadow: 0 0 8px white;
+  color: black;
+  background-color: transparent;
+}
+
+#business-hours p {
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  font-weight: bold;
+  transform: translateY(-72px);
+  color: rgb(230, 214, 188);
+  text-shadow: 0 0 8px rgb(38, 39, 50);
+}
+
+#locations {
+  text-align: center;
+}
+
+#locations h4 {
+  height: 28px;
+  width: 200px;
+  background-color: rgb(38, 39, 50);
+  border-radius: 8px;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translate(20px, 14px);
+  color: rgb(230, 214, 188);
+}
+
+.location-card h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
 .location-card {
-  width: 80%;
-  margin: 12px auto;
-  padding: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  margin: 6px auto;
+  padding: 3px;
   background-image: linear-gradient(
     to bottom right,
     rgb(204, 171, 115),
     rgb(230, 214, 188)
   );
   border-radius: 6px;
-  line-height: 1.2em;
 }
-
-section tr {
-  line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-#lower article {
-  display: inline-block;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(204, 171, 115),
-    rgb(230, 214, 188)
-  );
-  border: 2px solid rgb(52, 51, 38);
-  border-radius: 18px;
-  padding: 8px;
-  box-shadow: 3px 3px 5px rgb(52, 51, 38);
-  width: 300px;
-  margin: 30px 8px;
-  text-align: center;
-  border: 2px solid black;
-}
-
-.sales-section,
-.staffing-section {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(183, 88, 53),
-    rgb(204, 171, 115)
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10px auto;
-  border: 2px solid rgb(52, 51, 38);
+#shop {
+  background-color: rgba(80, 82, 104, 0.5);
+  width: 206px;
+  padding-top: 3px;
+  border: 3px solid rgb(38, 39, 50);
   border-radius: 12px;
-  width: 90vw;
-  padding: 8px;
-  box-shadow: 3px 3px 5px rgb(52, 51, 38);
-  transform: translateY(40px);
-  text-align: center;
+  margin: 0px auto 12px auto;
+  box-shadow: 3px 3px 5px black;
+}
+#shop img {
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
-.salmon-logo {
-  float: left;
-  width: 60px;
+#cutter {
+  transform: translateX(-40px);
+}
+
+#shirt {
+  transform: translateX(40px);
+}
+
+#shop-link {
+  font-size: 28px;
+  transform: translateY(-150px);
+  z-index: 5;
+}
+
+#shop-link a {
+  background-color: rgb(38, 39, 50);
+  border-radius: 12px;
+  color: rgb(230, 214, 188);
+
+  text-decoration: none;
+}
+
+#page-footer {
+  background-color: rgb(38, 39, 50);
+  color: white;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 table {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 th,
 td {
-  padding: 12px;
-  margin: 12px;
+  padding: 3px;
+  margin: 1px;
 }
 
 th {
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+td {
+  font-size: 14px;
 }
 
 td:first-child,
 td:last-child {
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 td:first-child {
   text-transform: capitalize;
 }
 
-.menu-section {
-  text-align: center;
-  margin-top: 30px;
+#sales-table th:last-child,
+#sales-table td:last-child {
+  max-width: 100px;
 }
 
-.menu-item {
-  display: inline-block;
-  width: 30%;
-  margin-left: 6px;
-  margin-right: 6px;
+#staffing-table th {
+  font-size: 16px;
+}
+
+#staffing-table td:last-child {
+  font-weight: normal;
+}
+
+#sales-table,
+#staffing-table {
   background-image: linear-gradient(
     to bottom right,
-    rgb(204, 171, 115),
-    rgb(230, 214, 188)
+    rgb(183, 88, 53),
+    rgb(204, 171, 115)
   );
-  border: 2px solid rgb(52, 51, 38);
-  border-radius: 18px;
+  margin-left: 10px;
+  width: 700px;
+  min-height: 260px;
+  border-radius: 12px;
   padding: 8px;
   box-shadow: 3px 3px 5px rgb(52, 51, 38);
+  text-align: center;
 }
 
-.menu-item img {
-  width: 85%;
-  object-fit: cover;
-  border-radius: 18px;
+fieldset {
+  margin-top: 24px;
+  /* border: 2px dashed lime; */
+  width: 200px;
+  transform: translateX(20px);
+  text-align: left;
+}
+
+legend {
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: rgb(38, 39, 50);
+  border: 3px solid salmon;
+  margin-bottom: 48px;
+}
+
+input#submit {
+  background-color: salmon;
+  color: black;
+  text-transform: capitalize;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+input#submit:hover {
+  cursor: pointer;
+}
+
+input {
   margin-top: 6px;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
-.menu-icon {
-  font-size: 48px;
-  color: salmon;
-  text-shadow: 2px 2px black;
+label {
+  font-weight: bold;
+  font-size: 14px;
 }
