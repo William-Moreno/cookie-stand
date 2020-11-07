@@ -8,12 +8,13 @@ body {
   );
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 h2 {
   background-color: rgb(38, 39, 50);
   color: rgb(223, 194, 145);
-  width: 700px;
+  width: 690px;
   padding: 4px 0;
   margin-top: 16px;
   margin-left: 10px;
@@ -81,8 +82,6 @@ nav ul li a:visited {
   margin: 10px;
 }
 
-/* 
- */
 
 #main-center {
   font-family: Arial, Helvetica, sans-serif;
@@ -244,6 +243,7 @@ nav ul li a:visited {
   text-align: center;
   font-size: 24px;
   line-height: 40px;
+  margin-top: 20px;
 }
 
 table {
@@ -253,8 +253,12 @@ table {
 
 th,
 td {
-  padding: 3px;
+  border: 1px solid rgba(80, 82, 104, 0.5);
+  padding: 2px;
   margin: 1px;
+  height 18px
+  line-height: 18px;
+  font-size: 14px
 }
 
 th {
@@ -269,7 +273,7 @@ td {
 td:first-child,
 td:last-child {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 td:first-child {
@@ -278,11 +282,11 @@ td:first-child {
 
 #sales-table th:last-child,
 #sales-table td:last-child {
-  max-width: 100px;
+  max-width: 90px;
 }
 
 #staffing-table th {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #staffing-table td:last-child {
@@ -293,14 +297,14 @@ td:first-child {
 #staffing-table {
   background-image: linear-gradient(
     to bottom right,
-    rgb(183, 88, 53),
-    rgb(204, 171, 115)
+    rgb(204, 120, 89),
+    rgb(230, 214, 188)
   );
   margin-left: 10px;
-  width: 700px;
+  width: 690px;
   min-height: 260px;
   border-radius: 12px;
-  padding: 8px;
+  padding: 6px;
   box-shadow: 3px 3px 5px rgb(52, 51, 38);
   text-align: center;
 }
@@ -347,3 +351,15 @@ label {
 #chinook-img {
   transform: translateY(-20px);
 }
+
+/* #staff-head,
+#table-head {
+  background-color: rgba(80, 82, 104, 0.5);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#table-foot,
+#staff-foot {
+  background-color: rgba(80, 82, 104, 0.5);
+} */
