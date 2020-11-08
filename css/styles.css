@@ -14,11 +14,11 @@ h2 {
   background-color: rgb(38, 39, 50);
   color: rgb(223, 194, 145);
   width: 690px;
-  padding: 4px 0;
+  padding: 6px 0;
   margin-top: 16px;
   margin-left: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
   text-align: center;
@@ -221,12 +221,13 @@ nav ul li a:visited {
 }
 
 #shop-link {
-  font-size: 28px;
+  font-size: 22px;
   transform: translateY(-150px);
   z-index: 5;
 }
 
 #shop-link a {
+  padding: 4px;
   background-color: rgb(38, 39, 50);
   border-radius: 12px;
   color: rgb(230, 214, 188);
@@ -247,7 +248,7 @@ nav ul li a:visited {
   text-align: center;
   font-size: 12px;
   line-height: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 table {
@@ -421,7 +422,7 @@ label {
 .awesome-paragraph {
   margin: 12px 6px;
   font-size: 14px;
-  text-align: left;
+  text-align: justify;
   color: #111;
   line-height: 18px;
   text-indent: 32px;
@@ -441,4 +442,23 @@ strong {
 
 em {
   font-style: italic;
+}
+
+#contact-us {
+  height: 0px;
+}
+
+#contact-us a {
+  text-decoration: none;
+}
+
+#contact-us p {
+  font-family: "Dancing Script", cursive;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: black;
+  text-shadow: 0 0 6px salmon;
+  transform: translateY(-120px);
 }
