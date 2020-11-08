@@ -234,17 +234,18 @@ nav ul li a:visited {
   text-decoration: none;
 }
 
-#page-footer {
+.page-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
   background-color: rgb(38, 39, 50);
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   height: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 40px;
   margin-top: 20px;
 }
@@ -258,20 +259,14 @@ th,
 td {
   border: 1px solid rgba(80, 82, 104, 0.5);
   padding: 2px;
-  margin: 1px;
   vertical-align: middle;
   font-size: 14px;
 }
 
 th {
   font-weight: bold;
-  font-size: 14px;
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-td {
-  font-size: 14px;
 }
 
 td:first-child,
@@ -291,6 +286,40 @@ td:first-child {
 
 #staffing-table th {
   font-size: 14px;
+}
+
+#table-head th:first-child,
+#staff-head th:first-child {
+  border-top: none;
+  border-left: none;
+}
+
+#table-head th:last-child,
+#staff-head th:last-child {
+  border-top: none;
+  border-right: none;
+}
+
+#table-foot th:first-child,
+#staff-foot th:first-child {
+  border-bottom: none;
+  border-left: none;
+}
+
+#table-foot th:last-child,
+#staff-foot th:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+
+#table-body tr td:last-child,
+#staff-body tr td:last-child {
+  margin-right: none;
+}
+
+#table-body tr td:first-child,
+#staff-body tr td:first-child {
+  margin-left: none;
 }
 
 #staffing-table td:last-child {
@@ -315,7 +344,6 @@ td:first-child {
 
 fieldset {
   margin-top: 24px;
-  /* border: 2px dashed lime; */
   width: 200px;
   transform: translateX(20px);
   text-align: left;
@@ -356,14 +384,34 @@ label {
   transform: translateY(-20px);
 }
 
-/* #staff-head,
-#table-head {
-  background-color: rgba(80, 82, 104, 0.5);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.corner-fish {
+  width: 92.5px;
 }
 
-#table-foot,
-#staff-foot {
-  background-color: rgba(80, 82, 104, 0.5);
-} */
+.corner-fish i {
+  text-align: right;
+  color: salmon;
+  transform: rotateZ(-30deg);
+}
+
+.social-media a {
+  color: rgb(230, 214, 188);
+  padding-right: 4px;
+}
+
+.page-footer span,
+.under-form {
+  font-family: "Dancing Script", cursive;
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 6px salmon;
+}
+.page-footer span {
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.under-form {
+  font-size: 24px;
+  margin-top: 32px;
+}
