@@ -383,7 +383,16 @@ label {
 }
 
 #chinook-img {
-  transform: translateY(-20px);
+  height: 80px;
+  width: 220px;
+  background-color: rgb(17, 88, 48);
+  border: 4px double tan;
+  border-radius: 50%;
+  transform: translate(10px, -28px);
+}
+
+.lone-fish {
+  width: 180px;
 }
 
 .corner-fish {
@@ -461,4 +470,17 @@ em {
   color: black;
   text-shadow: 0 0 6px salmon;
   transform: translateY(-120px);
+}
+
+.shop-image {
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.product-card {
+  width: 640px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
