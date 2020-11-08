@@ -1,35 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="css/reset.css" type="text/css">
- <script src="https://kit.fontawesome.com/4fc1b5d5ea.js" crossorigin="anonymous"></script>
- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="css/styles.css" type="text/css">
- <title>Salmon Cookies Store</title>
-</head>
-<body>
- <!-- Header -->
- <header>
-  <div id="logo-left">
-   <img src="img/salmon.png" alt="Logo" Title="The Salmon Cookies Logo" />
-  </div>
-  <div id="title">
-   <h1>Pat's Salmon Cookies</h1>
-  </div>
-  <div id="logo-right">
-   <img src="img/salmon.png" alt="Logo" Title="The Salmon Cookies Logo" />
-  </div>
- </header>
- <!-- Nav Bar -->
- <nav>
-  <ul>
-   <li><a href="index.html"><i class="fas fa-fish">Home</i></a></li>
-   <li><a href="#"><i class="fas fa-cookie">Products</i></a></li>
-   <li><a href="sales.html"><i class="fas fa-fish">Sales</i></a></li>
-   <li><a href="#"><i class="fas fa-cookie-bite">About Us</i></a></li>
-  </ul>
- </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/4fc1b5d5ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <title>Salmon Cookies Store</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div id="logo-left">
+        <img src="img/salmon.png" alt="Logo" title="The Salmon Cookies Logo" />
+      </div>
+      <div id="title">
+        <h1>Pat's Salmon Cookies</h1>
+      </div>
+      <div id="logo-right">
+        <img src="img/salmon.png" alt="Logo" title="The Salmon Cookies Logo" />
+      </div>
+    </header>
+    <!-- Nav Bar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-fish">Home</i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-cookie">Products</i></a>
+        </li>
+        <li>
+          <a href="sales.html"><i class="fas fa-fish">Sales</i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-cookie-bite">About Us</i></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="store-items">
+        <form action="">
+          <fieldset>
+            <div id="shop-section">
+              <legend>Our Products</legend>
+              <div id="sockeye-snickerdoodle" class="product-card">
+                <img
+                  src="img/sockeye-snicker.jpg"
+                  alt="sockeye snickerdoodle"
+                  title="Photo by Food Photographer | Jennifer Pallian on Unsplash"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Sockeye Snickerdoodle</p>
+                  <p class="product-blurb">
+                    Our most popular & award-winning cookie.
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>$2.45</p>
+                </div>
+                <div>
+                  <input type="text" name="sockeye" placeholder="0" />
+                </div>
+              </div>
+              <div id="chinook-chocolate" class="product-card">
+                <img
+                  src="img/chinook-chocolate.jpg"
+                  alt="chinook chocolate chip"
+                  title="Photo by Sara Cervera on Unsplash"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Chinook Chocolate Chip</p>
+                  <p class="product-blurb">
+                    With equal chunks of chocolate and chinook
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>$2.25</p>
+                </div>
+                <div>
+                  <input type="text" name="chinook" placeholder="0" />
+                </div>
+              </div>
+              <div id="coho-biscotti" class="product-card">
+                <img
+                  src="img/coho-biscotti.jpg"
+                  alt="coho biscotti"
+                  title="Photo by vishal bonthapally onUnsplash"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Coho Biscotti</p>
+                  <p class="product-blurb">
+                    A hint of Coho and a SNAP!!
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>$1.85</p>
+                </div>
+                <div>
+                  <input type="text" name="coho" placeholder="0" />
+                </div>
+              </div>
+              <div id="pink-sugar" class="product-card">
+                <img
+                  src="img/frosted-cookie2.jpg"
+                  alt="pink sugar cookie"
+                  title="Photo provided from Code 201 repository"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Pink Sugar Cookie</p>
+                  <p class="product-blurb">
+                    Pink salmon & sugar, coated in whipped-trout icing
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>$2.75</p>
+                </div>
+                <div>
+                  <input type="text" name="pink" placeholder="0" />
+                </div>
+              </div>
+              <div id="chum-butter" class="product-card">
+                <img
+                  src="img/chum-butter.jpg"
+                  alt="chum butter"
+                  title="Photo by Neha Deshmukh on Unsplash"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Chum Butter Cookie</p>
+                  <p class="product-blurb">
+                    It's a butter cookie... and it's "Chum"-my!!
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>$1.95</p>
+                </div>
+                <div>
+                  <input type="text" name="chum" placeholder="0" />
+                </div>
+              </div>
+              <div id="fishy-fortunes" class="product-card">
+                <img
+                  src="img/fishy-fortunes.jpg"
+                  alt="fishy fortune"
+                  title="Photo by Meritt Thomas on Unsplash"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Fishy Fortune Cookie</p>
+                  <p class="product-blurb">
+                    Not just for our Pisces friends anymore...
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>75&cent;</p>
+                </div>
+                <div>
+                  <input type="text" name="cutter" placeholder="0" />
+                </div>
+              </div>
+              <div
+                id="cookie-cutter"
+                alt="salmon cookie cutter"
+                class="product-card"
+              >
+                <img
+                  src="img/cutter.jpeg"
+                  alt="salmon cookie cutter"
+                  title="Photo provided from Code 201 repository"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Salmon Cookie Cutter</p>
+                  <p class="product-blurb">
+                    Spawn your very own schools of savory sweetness
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>$1.95</p>
+                </div>
+                <div>
+                  <input type="text" name="shirt" placeholder="0" />
+                </div>
+              </div>
+              <div id="salmon-shirt" class="product-card">
+                <img
+                  src="img/shirt.jpg"
+                  alt="salmon shirt"
+                  title="Photo provided from Code 201 repository"
+                  class="shop-image"
+                />
+                <div>
+                  <p class="product-title">Salmon T-Shirt</p>
+                  <p class="product-blurb">
+                    Available only in "One Size Fits Most"
+                  </p>
+                </div>
+                <div class="product-price">
+                  <p>$14.95</p>
+                </div>
+                <div>
+                  <input type="text" name="sockeye" placeholder="0" />
+                </div>
+              </div>
+              <div id="customer-details">
+                <legend>Your Information</legend>
+                <div id="customer-data">
+                  <label for="">
+                    First Name:
+                    <input
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      placeholder="John"
+                    />
+                  </label>
+                  <br />
+                  <label for="">
+                    Last Name:
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      placeholder="Doe"
+                    />
+                  </label>
+                  <br />
+                  <label for="">
+                    Street Address:
+                    <input
+                      type="text"
+                      name="street"
+                      id="street"
+                      placeholder="123 Main St"
+                    />
+                  </label>
+                  <br />
+                  <label for="">
+                    City:
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="Anytown"
+                    />
+                  </label>
+                  <br />
+                  <label for="">
+                    State:
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      placeholder="Some State"
+                    />
+                  </label>
+                  <br />
+                  <label for="">
+                    Zip Code:
+                    <input
+                      type="text"
+                      name="zipcode"
+                      id="zipcode"
+                      placeholder="#####"
+                    />
+                  </label>
+                  <br />
+                  <label for="">Payment Method:</label><br />
+                  <input type="radio" name="payment" id="cash" value="cash" />
+                  <label for="cash">Cash</label><br />
+                  <input type="radio" name="payment" id="check" value="check" />
+                  <label for="check">Check</label><br />
+                  <input
+                    type="radio"
+                    name="payment"
+                    id="credit"
+                    value="credit"
+                  />
+                  <label for="credit">Credit</label><br />
+                  <input type="submit" value="Checkout" id="store-submit">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <section class="customer-info"></section>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="social-media">
+        <a href="https://www.facebook.com"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://www.instagram.com"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <a href="https://www.twitter.com"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a href="https://www.pinterest.com"
+          ><i class="fab fa-pinterest-square"></i
+        ></a>
+      </div>
+      <div>
+        <p>
+          <span>Pat's Salmon Cookies</span> &copy; 2020 All Rights Reserved.
+        </p>
+      </div>
+      <div class="corner-fish">
+        <i class="fas fa-fish"></i>
+      </div>
+    </footer>
+  </body>
 </html>

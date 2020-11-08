@@ -383,7 +383,16 @@ label {
 }
 
 #chinook-img {
-  transform: translateY(-20px);
+  height: 80px;
+  width: 220px;
+  background-color: rgb(17, 88, 48);
+  border: 4px double tan;
+  border-radius: 50%;
+  transform: translate(10px, -28px);
+}
+
+.lone-fish {
+  width: 180px;
 }
 
 .corner-fish {
@@ -461,4 +470,67 @@ em {
   color: black;
   text-shadow: 0 0 6px salmon;
   transform: translateY(-120px);
+}
+
+.shop-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-card {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 120, 89),
+    rgb(230, 214, 188)
+  );
+  margin: 5px auto;
+  border-radius: 8px;
+  text-align: center;
+  height: 80px;
+  width: 520px;
+  padding-top: 8px;
+  box-shadow: 3px 3px 5px rgb(52, 51, 38);
+}
+
+.product-card div {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.product-card input {
+  max-width: 24px;
+  margin-left: 12px;
+}
+
+#customer-details {
+  position: absolute;
+  top: 0px;
+  left: 640px;
+}
+
+#customer-data {
+  padding: 12px 24px 12px 24px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 120, 89),
+    rgb(230, 214, 188)
+  );
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgb(52, 51, 38);
+}
+
+#customer-data input {
+  color: gray;
+}
+
+.product-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product-blurb {
+  width: 320px;
+  line-height: 24px;
 }
