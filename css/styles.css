@@ -415,15 +415,24 @@ label {
 
 .under-form {
   font-size: 24px;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .awesome-paragraph {
-  margin: 10px;
+  margin: 12px 6px;
   font-size: 14px;
   text-align: left;
   color: #111;
   line-height: 18px;
+  text-indent: 32px;
+}
+
+.awesome-paragraph::first-letter {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 0 6px salmon;
 }
 
 strong {
