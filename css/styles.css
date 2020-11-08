@@ -14,11 +14,11 @@ h2 {
   background-color: rgb(38, 39, 50);
   color: rgb(223, 194, 145);
   width: 690px;
-  padding: 4px 0;
+  padding: 6px 0;
   margin-top: 16px;
   margin-left: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
   text-align: center;
@@ -91,7 +91,7 @@ nav ul li a:visited {
 #hero img {
   width: 412px;
   object-fit: cover;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   border-radius: 12px;
 }
 
@@ -100,7 +100,7 @@ nav ul li a:visited {
   font-size: 32px;
   letter-spacing: 12px;
   text-shadow: 2px 2px 4px black;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 #main-left,
@@ -221,12 +221,13 @@ nav ul li a:visited {
 }
 
 #shop-link {
-  font-size: 28px;
+  font-size: 22px;
   transform: translateY(-150px);
   z-index: 5;
 }
 
 #shop-link a {
+  padding: 4px;
   background-color: rgb(38, 39, 50);
   border-radius: 12px;
   color: rgb(230, 214, 188);
@@ -247,7 +248,7 @@ nav ul li a:visited {
   text-align: center;
   font-size: 12px;
   line-height: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 table {
@@ -415,5 +416,49 @@ label {
 
 .under-form {
   font-size: 24px;
-  margin-top: 32px;
+  margin-top: 24px;
+}
+
+.awesome-paragraph {
+  margin: 12px 6px;
+  font-size: 14px;
+  text-align: justify;
+  color: #111;
+  line-height: 18px;
+  text-indent: 32px;
+}
+
+.awesome-paragraph::first-letter {
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 0 6px salmon;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+#contact-us {
+  height: 0px;
+}
+
+#contact-us a {
+  text-decoration: none;
+}
+
+#contact-us p {
+  font-family: "Dancing Script", cursive;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: black;
+  text-shadow: 0 0 6px salmon;
+  transform: translateY(-120px);
 }
