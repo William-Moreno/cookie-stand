@@ -350,12 +350,13 @@ fieldset {
 }
 
 legend {
-  color: white;
+  color: black;
   border-radius: 12px;
-  padding: 20px;
-  background-color: rgb(38, 39, 50);
-  border: 3px solid salmon;
+  padding: 12px;
+  background-color: salmon;
+  border: 2px solid rgb(38, 39, 50);
   margin-bottom: 48px;
+  transform: translateX(7px);
 }
 
 input#submit {
@@ -385,7 +386,7 @@ label {
 }
 
 .corner-fish {
-  width: 92.5px;
+  width: 82px;
 }
 
 .corner-fish i {
@@ -397,6 +398,7 @@ label {
 .social-media a {
   color: rgb(230, 214, 188);
   padding-right: 4px;
+  font-size: 16px;
 }
 
 .page-footer span,
