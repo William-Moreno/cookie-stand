@@ -41,12 +41,25 @@ function createOrder(e){
  var cutter = Number(e.target.cutter.value);
  var shirt = Number(e.target.shirt.value);
 
+ var totalCost = ((sockeye * 2.45) + (chinook * 2.25) + (coho * 1.85) + (pink * 2.75) + (chum * 1.95) + (fishy * 0.75) + (cutter * 1.95) + (shirt * 14.95));
+
 new Order(firstName, lastName, streetAddress, city, state, zipCode, payment, sockeye, chinook, coho, pink, chum, fishy, cutter, shirt);
+
+formElement.reset();
+
+document.getElementById('total').innerHTML = '';
+
+printTotal(totalCost);
 
 }
 
-console.log(cookieOrders);
-
+function printTotal(orderPrice){
+ var orderPrice = orderPrice;
+var orderTotal = document.getElementById('total');
+var totalPrice = document.createElement('p');
+totalPrice.textContent = `THANK YOU!! Your total order comes to $${orderPrice}.`;
+orderTotal.appendChild(totalPrice);
+}
 
 var formElement = document.getElementById('cookie-order');
 formElement.addEventListener('submit', createOrder);
