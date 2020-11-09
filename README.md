@@ -1,4 +1,4 @@
-# Lab: 09
+# Lab: 10b
 
 ## Salmon Cookies
 
@@ -41,3 +41,9 @@ Open in a web browser.
 - I had no real troubles extending what I have learned this week in order to implement a form, an event listener and an event handler in this lab.
 - I was also able to refactor the code to properly render and update the table with new locations, new totals and if different values were entered for an already existing location.
 - In order to create a solution, I did some research on looping to remove every `lastElementChild` from a node at StackOverflow. _(see link above)_
+
+#### Lab: 10
+
+- The project went fairly well. I did not have the time to complete it to a higher quality of standard as I would have liked, but the required elements are complete and functional.
+- A sales form has been created on the store page, but I am not satisfied with it and it is not complete.
+- The project has been deployed on GitHub Pages.
