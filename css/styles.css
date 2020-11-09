@@ -534,3 +534,16 @@ em {
   width: 320px;
   line-height: 24px;
 }
+
+#total {
+  margin-top: 60px;
+  padding: 12px 24px 12px 24px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(204, 120, 89),
+    rgb(230, 214, 188)
+  );
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgb(52, 51, 38);
+  text-align: center;
+}
